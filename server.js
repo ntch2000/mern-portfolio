@@ -31,8 +31,8 @@ connection.on("connected", () => {
 connection.on("error", (err) => {
   console.log(`Mongoose connection error: ${err}`);
 });
-// 6. Create Routes
 
+// 6. Create Routes
 app.get("/api/config", (req, res) => {
   res.json({
     success: true,
